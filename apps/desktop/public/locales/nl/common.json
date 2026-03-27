@@ -51,13 +51,14 @@
     }
   },
   "skills": {
-    "programming_languages": "Programming languages",
-    "cloud_infra": "Cloud & Infrastructure",
-    "frameworks": "Frameworks",
-    "databases": "Databases",
+    "programming_languages": "Programmeertalen",
+    "cloud_infra": "Cloud & Infrastructuur",
+    "sre": "SRE & Betrouwbaarheid",
+    "observability": "Observeerbaarheid",
     "cicd": "CI/CD & GitOps",
-    "observability": "Observability",
-    "tools": "Tools"
+    "ai_ml": "AI/ML Frameworks",
+    "databases": "Databases",
+    "web_apis": "Web & APIs"
   },
   "dos_emulator": {
     "loading": "Laden"
