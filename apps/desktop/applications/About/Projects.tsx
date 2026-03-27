@@ -69,7 +69,7 @@ export function ProjectRAG(params: SubViewParams) {
       <h3>Technologies</h3>
       <p>
         Python, sentence-transformers, ChromaDB, Knowledge Graph, BFS, Cosine Similarity<br/>
-        <a target="_blank" rel="noreferrer" href="https://github.com/parthbalar7/Graph-Enhanced-RAG">View on GitHub</a>
+        <a target="_blank" rel="noreferrer" href="https://github.com/parthbalar7/RAG-Assistant">View on GitHub</a>
       </p>
     </div>
   );
