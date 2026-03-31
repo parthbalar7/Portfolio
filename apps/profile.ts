@@ -27,13 +27,20 @@ export type Profile = {
 
 export const profile: Profile = {
   name: "Parth Balar",
-  title: "Site Reliability Engineer",
-  description: "Site Reliability Engineer with expertise in SLO/error-budget programs, GitOps CI/CD pipelines, and infrastructure automation across AWS and GCP. Experienced in Kubernetes, Terraform, and observability platforms like Splunk and Grafana.",
+  title: "DevOps Engineer",
+  description: "DevOps Engineer with expertise in CI/CD pipelines, infrastructure automation, and AI-driven operations across AWS and GCP. Experienced in Kubernetes, Terraform, observability platforms, and building LLM-powered operational tools.",
   websiteUrl: "https://github.com/parthbalar7",
   cvPath: "/assets/cv/Parth_Balar_Resume.pdf",
   email: "parthbalar07@gmail.com",
-  company: "Splunk",
+  company: "Citta Solutions",
   experiences: [
+    {
+      role: "DevOps",
+      company: "Citta Solutions",
+      from: "2025",
+      to: "Present",
+      summary: "Architected CI/CD pipelines (GitHub Actions + Terraform) for blue-green/canary deployments on AWS EKS, built an LLM-powered on-call assistant reducing MTTR by 45%, and developed AI-driven capacity forecasting models for proactive scaling."
+    },
     {
       role: "Site Reliability Engineer (Contract)",
       company: "Splunk",
@@ -46,7 +53,7 @@ export const profile: Profile = {
       company: "Crest Data",
       from: "2021",
       to: "2022",
-      summary: "Containerized legacy services with Docker and Kubernetes, built an internal automation platform with FastAPI and React reducing manual effort by 60%, and introduced structured observability reducing MTTR by 35%."
+      summary: "Containerized legacy services with Docker and Kubernetes, built an internal automation platform with FastAPI and React reducing manual effort by 60%, and introduced SLI/SLO-based observability reducing MTTR by 35%."
     }
   ],
   projects: [

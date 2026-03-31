@@ -57,6 +57,7 @@ export default function SkillsView(props: WindowProps) {
               <li><SkillEntry language="Prometheus" icon={{src: '/icons/skills/prometheus.svg', alt: 'Prometheus' }} /></li>
               <li><SkillEntry language="ELK Stack" icon={{src: '/icons/skills/elk.svg', alt: 'ELK Stack' }} /></li>
               <li><SkillEntry language="CloudWatch" icon={{src: '/icons/skills/cloudwatch.svg', alt: 'CloudWatch' }} /></li>
+              <li><SkillEntry language="PagerDuty" icon={{src: '/icons/skills/pagerduty.svg', alt: 'PagerDuty' }} /></li>
             </ul>
 
             <h1>{ t("skills.cicd") }</h1>

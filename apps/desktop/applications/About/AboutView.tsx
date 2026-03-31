@@ -111,7 +111,7 @@ function AboutSubView(params: SubViewParams) {
           <h1 className={styles['page-h1']}>Welcome</h1>
 
           <p>
-            I'm {profile.name}, a Site Reliability Engineer based in the United States.
+            I'm {profile.name}, a DevOps Engineer based in the United States.
           </p>
 
           <p>Thanks for taking the time to explore my portfolio. If you have any questions or comments, please contact me via the <a onClick={() => openContactApp()} href='#contact'>contact application</a> or shoot me an email at <a href={`mailto:${profile.email}`}>{profile.email}</a></p>
@@ -120,19 +120,21 @@ function AboutSubView(params: SubViewParams) {
 
           <h2>About me</h2>
 
-          <p>I'm an SRE and infrastructure engineer passionate about building reliable, scalable systems. I hold a Master's degree in Information Technology Management from The University of Texas at Dallas and a Bachelor's in Information Technology from Dharmsinh Desai University, India.</p>
+          <p>I'm a DevOps and infrastructure engineer passionate about building reliable, scalable systems. I hold a Master's degree in Information Technology Management from The University of Texas at Dallas and a Bachelor's in Information Technology from Dharmsinh Desai University, India.</p>
 
-          <p>My journey into technology started with a deep curiosity about how systems work under the hood. This curiosity led me to specialize in site reliability engineering, where I focus on keeping distributed systems running smoothly at scale through automation, observability, and infrastructure as code.</p>
+          <p>My journey into technology started with a deep curiosity about how systems work under the hood. This curiosity led me to specialize in DevOps and site reliability engineering, where I focus on keeping distributed systems running smoothly at scale through automation, observability, and infrastructure as code.</p>
 
-          <p>At Splunk, I owned the end-to-end SLO/error-budget program for Splunk Cloud, maintaining 99.9% uptime through proactive alerting and automated remediation. I built GitOps CI/CD pipelines enabling zero-downtime deployments on Kubernetes across AWS and GCP, and authored reusable Terraform modules that became the team standard for service onboarding.</p>
+          <p>At Citta Solutions, I architect CI/CD pipelines for blue-green and canary deployments on AWS EKS, build LLM-powered on-call assistants that auto-triage PagerDuty alerts and reduce MTTR by 45%, and develop AI-driven capacity forecasting models for proactive scaling and cost optimization.</p>
 
-          <p>Before that, at Crest Data, I containerized legacy services, built internal automation platforms, and introduced structured observability practices that significantly reduced incident response times.</p>
+          <p>Previously at Splunk, I owned the end-to-end SLO/error-budget program for Splunk Cloud, maintaining 99.9% uptime through proactive alerting and automated remediation. I built GitOps CI/CD pipelines enabling zero-downtime deployments on Kubernetes across AWS and GCP, and authored reusable Terraform modules that became the team standard for service onboarding.</p>
+
+          <p>Before that, at Crest Data, I containerized legacy services, built internal automation platforms, and introduced SLI/SLO-based observability practices that significantly reduced incident response times.</p>
 
           <p>Beyond infrastructure, I'm deeply interested in AI and intelligent systems. I've built FRIDAY, an autonomous AI assistant powered by Claude with 112+ tools, a graph-enhanced RAG retrieval system, and DataZen, a self-serve analytics platform. These projects reflect my drive to push the boundaries of what automation can achieve.</p>
 
           <h2>What drives me</h2>
 
-          <p>I believe in building systems that are not just functional, but observable, maintainable, and resilient. Whether it's designing CI/CD pipelines, implementing chaos engineering practices, or architecting AI-powered tools, I approach every problem with a focus on reliability and developer experience.</p>
+          <p>I believe in building systems that are not just functional, but observable, maintainable, and resilient. Whether it's designing CI/CD pipelines, building LLM-powered operational tools, or architecting AI-powered assistants, I approach every problem with a focus on reliability and developer experience.</p>
 
           <p>I'm always exploring new technologies and looking for interesting problems to solve. If you'd like to connect, feel free to reach out!</p>
         </div>
@@ -150,14 +152,26 @@ function ExperienceSubView(params: SubViewParams) {
       <div data-subpage-content className={styles['subpage-content']}>
         <h1 className={styles['page-h1']}>{t("about.navigation.experience")}</h1>
 
+        <h2>Jun 2025 - Present - Citta Solutions</h2>
+        <p><b>DevOps</b> - Plano, TX</p>
+        <ul>
+          <li>Architected CI/CD pipelines (GitHub Actions + Terraform) for blue-green/canary deployments on AWS EKS, cutting release cycle time by 35%; integrated ML-based anomaly detection into deployment gates to auto-rollback on predicted SLO breaches.</li>
+          <li>Built an LLM-powered on-call assistant (LangChain + Claude API) that triages PagerDuty alerts, queries Splunk/CloudWatch context, and auto-generates incident summaries reducing manual triage time by 50% and MTTR by 45%.</li>
+          <li>Developed AI-driven capacity forecasting models (Prophet + Python) on CloudWatch/Prometheus time-series data to predict traffic spikes 24 hrs. ahead, enabling proactive scaling and 18% cloud cost reduction.</li>
+          <li>Authored Terraform IaC modules (EKS, RDS, VPC, IAM) as team standards, cutting provisioning from days to under 2 hours; embedded ChromaDB-backed RAG runbook retrieval into postmortem workflows for instant remediation suggestions.</li>
+        </ul>
+
+        <h3>Technologies</h3>
+        <p>AWS EKS, Terraform, GitHub Actions, LangChain, Claude API, Python, PagerDuty, Splunk, CloudWatch, Prometheus</p>
+
         <h2>Jun 2022 - Dec 2023 - Splunk (Contract)</h2>
         <p><b>Site Reliability Engineer</b> - Ahmedabad, India</p>
         <ul>
-          <li>Owned end-to-end SLO/error-budget program for Splunk Cloud; maintained 99.9% uptime via proactive alerting and automated Python/Shell remediation across distributed systems at scale.</li>
+          <li>Owned end-to-end SLO/error-budget program for Splunk Cloud across distributed systems at scale, maintaining 99.9% uptime through proactive alerting and automated Python/Shell remediation.</li>
           <li>Built GitOps CI/CD pipelines with Jenkins and Terraform enabling zero-downtime blue-green releases on Kubernetes (AWS & GCP), cutting deployment cycle time by 40%.</li>
-          <li>Authored reusable Terraform IaC modules that reduced environment provisioning from days to hours (60% faster), adopted as team standard for all new service onboarding.</li>
-          <li>Rearchitected indexing/ingestion pipelines, reducing query latency by 30% and ingestion overhead by 20%; built Grafana/Splunk dashboards surfacing degradation before user impact.</li>
-          <li>Led blameless postmortems and chaos-engineering reviews; converted learnings into runbooks and automated recovery playbooks, cutting MTTR by 40% over six months.</li>
+          <li>Authored reusable Terraform IaC modules adopted as the team standard for all new service onboarding, cutting environment provisioning time by 60% and scaling solutions fleet-wide.</li>
+          <li>Rearchitected indexing/ingestion pipelines, reducing query latency by 30% and ingestion overhead by 20%; built Splunk and Grafana dashboards surfacing degradation before user impact.</li>
+          <li>Led blameless postmortems and chaos-engineering reviews across service owners; converted findings into automated recovery runbooks that cut MTTR by 40% over six months.</li>
           <li>Drove FinOps initiative (AWS/GCP migration + rightsizing) via capacity modeling, achieving 15% reduction in cloud spend.</li>
         </ul>
 
@@ -167,9 +181,9 @@ function ExperienceSubView(params: SubViewParams) {
         <h2>Dec 2021 - May 2022 - Crest Data (Intern)</h2>
         <p><b>Site Reliability Engineer Intern</b> - Ahmedabad, India</p>
         <ul>
-          <li>Containerized legacy services with Docker and deployed on Kubernetes (AWS); automated provisioning via Terraform + Jenkins, reducing deployment setup from hours to minutes.</li>
-          <li>Built an internal automation platform (FastAPI + React) replacing manual data-processing workflows, delivering 60% reduction in manual effort and 40% fewer data errors.</li>
-          <li>Introduced structured observability with Grafana and Splunk (SLIs/SLO targets + postmortem culture), reducing MTTR by 35% within the first quarter.</li>
+          <li>Containerized legacy services with Docker and deployed on Kubernetes (AWS); automated infrastructure provisioning via Terraform + Jenkins, reducing deployment setup from hours to minutes at scale.</li>
+          <li>Built an internal automation platform (FastAPI + React) replacing manual data-processing workflows, delivering 60% reduction in manual effort and 40% fewer data errors, eliminating SRE toil.</li>
+          <li>Introduced SLI/SLO-based observability using Grafana and Splunk, establishing postmortem culture from scratch; reduced MTTR by 35% within the first quarter.</li>
         </ul>
 
         <h3>Technologies</h3>
