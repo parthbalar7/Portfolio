@@ -152,13 +152,14 @@ function ExperienceSubView(params: SubViewParams) {
       <div data-subpage-content className={styles['subpage-content']}>
         <h1 className={styles['page-h1']}>{t("about.navigation.experience")}</h1>
 
-        <h2>Jun 2025 - Present - Citta Solutions</h2>
+        <h2>Jun 2024 - Present - Citta Solutions</h2>
         <p><b>DevOps</b> - Plano, TX</p>
         <ul>
-          <li>Architected CI/CD pipelines (GitHub Actions + Terraform) for blue-green/canary deployments on AWS EKS, cutting release cycle time by 35%; integrated ML-based anomaly detection into deployment gates to auto-rollback on predicted SLO breaches.</li>
-          <li>Built an LLM-powered on-call assistant (LangChain + Claude API) that triages PagerDuty alerts, queries Splunk/CloudWatch context, and auto-generates incident summaries reducing manual triage time by 50% and MTTR by 45%.</li>
-          <li>Developed AI-driven capacity forecasting models (Prophet + Python) on CloudWatch/Prometheus time-series data to predict traffic spikes 24 hrs. ahead, enabling proactive scaling and 18% cloud cost reduction.</li>
-          <li>Authored Terraform IaC modules (EKS, RDS, VPC, IAM) as team standards, cutting provisioning from days to under 2 hours; embedded ChromaDB-backed RAG runbook retrieval into postmortem workflows for instant remediation suggestions.</li>
+          <li>Drive reliability and performance of production services on AWS EKS Kubernetes by defining SLOs/SLIs, improving observability through Prometheus, Grafana, and CloudWatch, and proactively identifying system bottlenecks across cloud environments. </li>
+          <li>Automate infrastructure and operations using Terraform, Kubernetes, and CI/CD tools (GitHub Actions) to eliminate toil and enable scalable, fault-tolerant deployments via blue-green and canary strategies, cutting release cycle time by 35%. </li>
+          <li>Build monitoring systems with Prometheus, Grafana, and Splunk for real-time alerting and root-cause analysis; developed an LLM-powered oncall assistant (LangChain + Claude API) that triages PagerDuty alerts and queries production context, cutting manual triage time by 50% and MTTR by 45%. </li>
+          <li>Lead incident management through on-call rotations, conducting blameless postmortems, and implementing automated recovery runbooks via ChromaDB-backed RAG retrieval to minimize downtime. </li>
+          <li>Collaborate cross-functionally with product, infrastructure, and DevOps teams to integrate ML-based anomaly detection into deployment gates, reducing incidents and ensuring architectural clarity. </li>
         </ul>
 
         <h3>Technologies</h3>
