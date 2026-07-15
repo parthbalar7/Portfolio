@@ -58,22 +58,16 @@ export const profile: Profile = {
   ],
   projects: [
     {
-      name: "FRIDAY - Autonomous AI Assistant",
-      description: "Full-stack AI assistant powered by Claude Sonnet 4.6 with 112+ LangChain tools across 36 modules, featuring a LangGraph ReAct agent with multi-step planning and semantic memory via ChromaDB.",
+      name: "Berthline - AI Governance Control Plane",
+      description: "Self-hostable governance and security control plane for AI agents and models, with fail-closed policy gates, hardened Kubernetes workloads, signed audit evidence, and end-to-end lineage.",
       link: "https://github.com/parthbalar7",
-      tech: ["Python", "FastAPI", "LangGraph", "LangChain", "React", "ChromaDB", "Docker", "WebSocket"]
+      tech: ["Python", "Kubernetes", "React", "TypeScript", "Ed25519", "KMS", "Policy as Code", "RBAC"]
     },
     {
-      name: "Graph-Enhanced RAG Retrieval System",
-      description: "Hybrid retrieval pipeline combining dense vector search with BFS knowledge-graph traversal to surface structurally related code chunks invisible to keyword search.",
+      name: "Graph-Enhanced RAG System",
+      description: "Local-first RAG assistant combining dense, sparse, and Personalized-PageRank graph retrieval with cross-encoder reranking, offline evaluation, incremental indexing, and long-term memory.",
       link: "https://github.com/parthbalar7",
-      tech: ["Python", "sentence-transformers", "ChromaDB", "Knowledge Graph", "BFS", "Cosine Similarity"]
-    },
-    {
-      name: "DataZen — Self-Serve Analytics Platform",
-      description: "Platform transforming raw CSV uploads into business insights in under 1 minute with auto-generated visualizations, RFM customer segmentation, and AI-generated executive summaries.",
-      link: "https://github.com/parthbalar7",
-      tech: ["Python", "React", "ML", "Data Visualization"]
+      tech: ["Python", "ChromaDB", "MiniLM", "BM25", "SPLADE", "Knowledge Graph", "Cross-Encoder", "Local LLMs"]
     }
   ]
 };

@@ -5,7 +5,7 @@ import { profile } from '../../../profile';
 import { BaseApplicationManager } from '../ApplicationManager';
 import { useTranslation } from 'react-i18next';
 import { TFunction } from 'i18next';
-import { ProjectFriday, ProjectRAG, ProjectDataZen } from './Projects';
+import { ProjectBerthline, ProjectRAG } from './Projects';
 import { ScreenResolution } from '@/apis/Screen/ScreenService';
 
 type SubView = (
@@ -13,9 +13,8 @@ type SubView = (
   'about' |
   'experience' |
   'projects' |
-  'project-friday' |
+  'project-berthline' |
   'project-rag' |
-  'project-datazen' |
   'contact'
 );
 
@@ -130,7 +129,7 @@ function AboutSubView(params: SubViewParams) {
 
           <p>Before that, at Crest Data, I containerized legacy services, built internal automation platforms, and introduced SLI/SLO-based observability practices that significantly reduced incident response times.</p>
 
-          <p>Beyond infrastructure, I'm deeply interested in AI and intelligent systems. I've built FRIDAY, an autonomous AI assistant powered by Claude with 112+ tools, a graph-enhanced RAG retrieval system, and DataZen, a self-serve analytics platform. These projects reflect my drive to push the boundaries of what automation can achieve.</p>
+          <p>Beyond infrastructure, I'm deeply interested in secure AI systems. I've built Berthline, a Kubernetes-native governance and security control plane for AI agents and models, and a local-first graph-enhanced RAG system with evaluated hybrid retrieval. These projects reflect my focus on making intelligent systems secure, measurable, and production-ready.</p>
 
           <h2>What drives me</h2>
 
@@ -219,9 +218,8 @@ function ProjectsSubView(params: SubViewParams) {
 
         <h2>2024 - 2025</h2>
         <ul>
-          <li>{ProjectButton('FRIDAY - AI Assistant', 'project-friday', '/icons/about-app.png')}</li>
+          <li>{ProjectButton('Berthline - AI Governance', 'project-berthline', '/icons/about-app.png')}</li>
           <li>{ProjectButton('Graph-Enhanced RAG System', 'project-rag', '/icons/algorithm-visualizer-icon.png')}</li>
-          <li>{ProjectButton('DataZen - Analytics Platform', 'project-datazen', '/icons/skills-icon.png')}</li>
         </ul>
       </div>
     </div>
@@ -234,9 +232,8 @@ function RenderSubView(view: SubView, params: SubViewParams): JSX.Element {
     case 'about': return AboutSubView(params);
     case 'experience': return ExperienceSubView(params);
     case 'projects': return ProjectsSubView(params);
-    case 'project-friday': return ProjectFriday(params);
+    case 'project-berthline': return ProjectBerthline(params);
     case 'project-rag': return ProjectRAG(params);
-    case 'project-datazen': return ProjectDataZen(params);
   }
 
   return <></>;
